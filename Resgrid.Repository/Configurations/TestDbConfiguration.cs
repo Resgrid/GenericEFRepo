@@ -5,10 +5,14 @@ using Resgrid.Repository.Contexts;
 
 namespace Resgrid.Repository.Configurations
 {
+	/// <summary>
+	/// Test Database Configuration. This is useful if you want to create seed data just for testing
+	/// </summary>
 	public class TestDbConfiguration : DbMigrationsConfiguration<DataContext>
 	{
 		public TestDbConfiguration()
 		{
+			// Automatic migraiton is turned ON for testing (allows us to create schema on the fly for blank databases)
 			AutomaticMigrationsEnabled = true;
 			AutomaticMigrationDataLossAllowed = true;
 		}

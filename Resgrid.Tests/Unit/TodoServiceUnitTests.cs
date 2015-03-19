@@ -6,6 +6,12 @@ using Resgrid.Services;
 
 namespace Resgrid.Tests.Unit
 {
+	/* Unit Testing Example
+	 * Here we will mock out the Generic Repository so that we can 
+	 * just test service code. 
+	 *
+	 */
+ 
 	namespace TodoServiceUnitTests
 	{
 		public class with_the_todo_service : TestBase

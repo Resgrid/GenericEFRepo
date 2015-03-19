@@ -61,6 +61,7 @@ namespace Resgrid.Repository
 
 		public virtual void SaveOrUpdate(T entity)
 		{
+			//This repository supports Guid and Int based ID's. If you need to support other types add them here.
 			if ((entity.Id is Guid && ((Guid)entity.Id) == Guid.Empty) ||
 				(entity.Id is int && ((int)entity.Id) == 0))
 			{
@@ -127,6 +128,7 @@ namespace Resgrid.Repository
 		{
 			foreach (var entity in entitiesToAdd)
 			{
+				//This repository supports Guid and Int based ID's. If you need to support other types add them here.
 				if ((entity.Id is Guid && ((Guid)entity.Id) == Guid.Empty) ||
 				(entity.Id is int && ((int)entity.Id) == 0))
 				{

@@ -5,6 +5,9 @@ using Resgrid.Repository.Migrations;
 
 namespace Resgrid.Repository.Configurations
 {
+	/// <summary>
+	/// Standard DBConfig (I.e. Production)
+	/// </summary>
 	public class StandardDbConfiguration : DbConfiguration
 	{
 		public StandardDbConfiguration()
